@@ -27,8 +27,7 @@
             align-items: center;
             height: 80px;
             background-color: rgb(19, 19, 62);
-            ;
-            ;
+            
         }
 
         nav ul {
@@ -79,7 +78,21 @@
         .leftSection .buttons{
             padding: 50px 0;
         }
+        .leftsection .buttons a:hover{
+            color: #0e0e1a;
+            font-size: 20px;
+        }
         .leftSection .btn {
+            padding: 12px;
+            background-color: #0b3a3b;
+            color: white;
+            border: 2px solid whitesmoke;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+         .leftSection .btntwo {
             padding: 12px;
             background-color: #0b3a3b;
             color: white;
@@ -145,6 +158,45 @@
             padding: 12px 0;
         
         }
+         .linked {
+            text-decoration: none;
+        }
+
+        .btn {
+            text-decoration: none;
+        }
+
+        .btntwo {
+            text-decoration: none;
+        }
+
+        .git:hover {
+            color: blue;
+        }
+
+        .git {
+            text-decoration: none;
+            color: white;
+        }
+
+        .linked:hover {
+            color: blue;
+        }
+
+        .linked {
+            text-decoration: none;
+            color: white;
+        }
+
+        .insta:hover {
+            color: blue;
+        }
+
+        .insta {
+            text-decoration: none;
+            color: white;
+        }
+        
 
     
     </style>
@@ -160,7 +212,6 @@
                     <li><a href="/">About</a></li>
                     <li><a href="/">Services</a></li>
                     <li><a href="/">Project</a></li>
-                    <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -175,6 +226,13 @@
                 <div class="buttons">
                     <button class="btn"><a href="https://drive.google.com/file/d/1hjgmf-Mw0kLDNEqfdZroEFk8wWfHzGvl/view?usp=sharing">Download Resume</a></button>
                 </div>
+                <section class="second1">
+                    <div class="travel">
+                        <img src="travel.png" alt="" width="300" height="200" </div>
+                        <div class="buttons"><button><a class="btntwo" href="https://github.com/KSHITIJ73/Travel">
+                                    Travel project github link</a></button>
+                        </div>
+                </section>
             </div>
             <div class="rightSection">
                 <img src="dev.png" alt="">
@@ -218,12 +276,16 @@
             <div class="second">
                 <ul>
                     <li>
-                        <a href="https://www.linkedin.com/in/kshitij-kumar-785072223/">
+                        <a class="linked" href="https://www.linkedin.com/in/kshitij-kumar-785072223/">
                             linkedin</a>
                     </li>
-                    <li><a href="https://github.com/KSHITIJ73">
+                    <li><a clas="git" href="https://github.com/KSHITIJ73">
                         Github</a>
                     </li>
+                    <li><a class="insta" href="https://www.instagram.com/kshitij67kj/">
+                            Instagram
+                        </a></li>
+                    
                     
                 </ul>
             </div>
