@@ -21,6 +21,15 @@
             font-family: 'poppins', sans-serif;
         }
 
+          /* Menu bar styles */
+        header {
+            background-color: #0b3a3b;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
         nav {
             display: flex;
             justify-content: space-around;
@@ -40,18 +49,36 @@
 
         nav ul li {
             list-style: none;
-            margin: 0 23px;
+            margin: 0 20px;
         }
 
         nav ul li a {
             text-decoration: none;
             color: white;
+            font-size: 18px;
         }
 
         nav ul li a:hover {
             color: rgb(153, 153, 255);
             font-size: 1.01rem;
         }
+        
+        /* Sticky header */
+        main {
+            padding-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                height: auto;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
 
         main hr {
             border: 0;
@@ -199,7 +226,61 @@
             text-decoration: none;
             color: white;
         }
-        
+         /* Media query for smaller devices (up to 768px) */
+        @media (max-width: 768px) {
+            .firstSection {
+                flex-direction: column;
+            }
+
+            .firstSection>div,
+            .rightSection {
+                width: 100%;
+                text-align: center;
+            }
+
+            .rightSection img,
+            .leftSection img {
+                width: 200px;
+                height: 200px;
+                margin-bottom: 20px;
+            }
+
+            .firstSection .buttons {
+                padding: 20px 0;
+            }
+
+            .leftSection .btn,
+            .leftSection .btntwo {
+                font-size: 16px;
+            }
+
+            .secondSection {
+                flex-direction: column;
+            }
+        }
+
+        /* Media query for larger devices (769px and above) */
+        @media (min-width: 769px) {
+            .firstSection {
+                justify-content: space-around;
+            }
+
+            .rightSection img,
+            .leftSection img {
+                width: 300px;
+                height: 300px;
+                margin-bottom: 0;
+            }
+
+            .firstSection .buttons {
+                padding: 50px 0;
+            }
+
+            .leftSection .btn,
+            .leftSection .btntwo {
+                font-size: 20px;
+            }
+        }
 
     
     </style>
